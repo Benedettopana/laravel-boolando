@@ -11,6 +11,7 @@
 </head>
 <body>
   @include('partials.header')
-  Main
+  @include('partials.product')
+  @include('partials.footer')
 </body>
 </html>

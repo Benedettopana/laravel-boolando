@@ -1,0 +1,12 @@
+.bottom-bar {
+    width: 100%;
+    background-color: $bg-color-bottom-bar;
+    color: $color-menu-a;
+    height: 90px;
+    .box {
+        margin: 0 17%;
+        .info .menu a {
+            font-size: 0.8rem;
+        }
+    }
+}

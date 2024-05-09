@@ -8,10 +8,9 @@
       <!-- nav -->
       <nav class="menu">
         <ul>
-          {{-- <li>menu section</li> --}}
           @foreach ($section as $item)
             <li>
-              <a :href="{{ $item['link'] }}">{{ $item['title'] }}</a>
+              <a href="{{ $item['link'] }}">{{ $item['title'] }}</a>
             </li>
           @endforeach
 
@@ -35,9 +34,6 @@
               </a>
             </li>
           @endforeach
-          {{-- <li v-for="(item, index) in menuIcon" :key="index">
-
-          </li> --}}
         </ul>
       </nav>
       <!-- /icon -->

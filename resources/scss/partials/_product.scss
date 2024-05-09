@@ -1,0 +1,73 @@
+/* hover */
+// line-through
+.line {
+    text-decoration: line-through;
+}
+
+.prefer {
+    color: $color-heart-clicked;
+}
+.prodotto {
+    width: 410px;
+    margin: 8px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover .nascosta {
+        display: block;
+    }
+    & .nascosta {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+    }
+    & .cuore {
+        position: absolute;
+        top: 10px;
+        left: 88%;
+        padding: 5px 15px;
+
+        font-size: 2rem;
+        background-color: $bg-product-heart;
+        color: $color-heart;
+    }
+    .badge {
+        position: absolute;
+        bottom: 90px;
+        left: 0;
+        display: flex;
+    }
+    & .sconto {
+        background-color: $color-price;
+        color: $color-sale;
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        margin-right: 6px;
+        &.sosteni {
+            background-color: $bg-sale-sostieni;
+        }
+        &.sosteni.singolo {
+            left: 0;
+        }
+    }
+}
+
+.marca {
+    font-size: 0.8rem;
+    padding-bottom: 0;
+    &.prezzo {
+        color: $color-price;
+        margin-right: 5px;
+        &.originale {
+            color: $color-price-original;
+        }
+        &::after {
+            content: " \20AC";
+        }
+    }
+}
+
+.nome {
+    text-transform: uppercase;
+}

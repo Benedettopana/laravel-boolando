@@ -6,3 +6,19 @@
 @import "/resources/scss/partials/variables";
 @import "/resources/scss/partials/general";
 @import "/resources/scss/partials/header";
+@import "/resources/scss/partials/product";
+@import "/resources/scss/partials/footer";
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    a {
+        color: $color-menu-a;
+        text-decoration: none;
+        margin-right: 10px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
