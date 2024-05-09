@@ -11,7 +11,8 @@
 </head>
 <body>
   @include('partials.header')
-  @include('partials.product')
-  @include('partials.footer')
+
+  {{-- @include('partials.product') --}}
+  {{-- @include('partials.footer') --}}
 </body>
 </html>

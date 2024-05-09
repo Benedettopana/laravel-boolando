@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/product', function () {
+    $products = config('product');
+    // dd($products);
+    return view('product', compact('products'));
+})->name('product');
+
 // Route::get('/', function () {
 //     return view('home');
 // })->name('home');
