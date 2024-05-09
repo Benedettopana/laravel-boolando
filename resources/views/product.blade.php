@@ -1,6 +1,6 @@
 
 @extends('layout.main');
-
+@section('product')
 <div class="container-xl ">
   <div class="row row-cols-4 justify-content-center align-content-center  my-5">
     @foreach($products as $item)
@@ -26,4 +26,5 @@
   </div>
 </div>
 
+@endsection
 

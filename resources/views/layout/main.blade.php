@@ -11,8 +11,8 @@
 </head>
 <body>
   @include('partials.header')
-
+  @yield('product')
   {{-- @include('partials.product') --}}
-  {{-- @include('partials.footer') --}}
+  @include('partials.footer')
 </body>
 </html>
