@@ -13,7 +13,7 @@
     <div class="cuore">
       <span>&hearts;</span>
     </div>
-    <div class="sconto">prova</div>
+    <div class="sconto">{{ $item['discount'] }}</div>
     <!-- img in primo piano -->
     <img src="{{$item['frontImage']}}" alt="{{ $item['id']}}">
     <span class="marca">{{ $item['brand']}}</span>

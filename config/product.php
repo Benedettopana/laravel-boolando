@@ -11,6 +11,8 @@ return $products = [
             "priceOriginal" => 29.99,
             "price" => 14.99,
             "isInFavorites" => true,
+            "discount" => "-50%",
+
             // "badges" => [
             //     [/img/
             //         "type" => "tag",
@@ -30,6 +32,7 @@ return $products = [
             "name" => "Roses Tee",
             "price" => 20.99,
             "isInFavorites" => true,
+            "discount" => "-30%",
             "badges" => [
                 [
                     "type" => "discount",
@@ -45,6 +48,7 @@ return $products = [
             "name" => "Voglia di colori pastello",
             "price" => 129.99,
             "isInFavorites" => false,
+            "discount" => "-30%",
             "badges" => [
                 [
                     "type" => "discount",
@@ -60,6 +64,7 @@ return $products = [
             "name" => "Tee Unisex",
             "price" => 14.99,
             "isInFavorites" => false,
+            "discount" => "-50%",
             "badges" => [
                 [
                     "type" => "tag",
@@ -79,6 +84,7 @@ return $products = [
             "name" => "Stripe Bodice",
             "price" => 99.99,
             "isInFavorites" => true,
+            "discount" => "-50%",
             "badges" => [
                 [
                     "type" => "tag",
@@ -98,6 +104,7 @@ return $products = [
             "name" => "Maglione - Black",
             "price" => 29.99,
             "isInFavorites" => true,
+            "discount" => "-50%",
             "badges" => [
                 [
                     "type" => "tag",
