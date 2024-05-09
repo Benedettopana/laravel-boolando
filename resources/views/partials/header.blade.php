@@ -1,14 +1,20 @@
-
+@php
+    $section = config('header.menu_section');
+    $social = config('header.menu_social');
+@endphp
 <header>
   <div class="topbar">
     <div class="box">
       <!-- nav -->
       <nav class="menu">
         <ul>
-          <li>menu section</li>
-          {{-- <li v-for="(item, index) in menuSection" :key="index">
-            <a :href="item.link">{{ item.title }}</a>
-          </li> --}}
+          {{-- <li>menu section</li> --}}
+          @foreach ($section as $item)
+            <li>
+              <a :href="{{ $item['link'] }}">{{ $item['title'] }}</a>
+            </li>
+          @endforeach
+
         </ul>
       </nav>
       <!-- /nav -->
@@ -22,9 +28,15 @@
       <!-- icon -->
       <nav class="menu social">
         <ul>
-          <li>social</li>
+          @foreach ($social as $item)
+            <li>
+              <a href="{{ $item['link']}}">
+				<i class="{{ $item['icon']}}"></i>
+              </a>
+            </li>
+          @endforeach
           {{-- <li v-for="(item, index) in menuIcon" :key="index">
-            <a :href="item.link" v-html="item.icon"></a>
+
           </li> --}}
         </ul>
       </nav>
